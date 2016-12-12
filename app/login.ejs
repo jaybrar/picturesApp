@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+  <div class="row">
+  	<br>
+  	<br>
+	<div class='container'>
+		<div class="col-sm-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading"><h3>Login</h3></div>
+			<div class="panel-body">
+				<form action='/login' method='post' name='loginForm'>	
+					<div class="form-group">
+						<label>Email address</label>
+						<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+					</div>
+					<button type="submit" class="btn btn-primary" name='submit'>Submit</button>
+				</form>
+				
+				<span id='msg'></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading"><h3>Registration</h3></div>
+			<div class="panel-body">
+				<form action='/register' method='post'>	
+					<div class="form-group">
+						<label for="exampleInputEmail1">First Name</label>
+						<input type="name" name="name" class="form-control" id="exampleInputEmail1" placeholder="First Name" required>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Re-Enter Password</label>
+						<input type="password" name="password2" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+  </div>
+
+</body>
+</html>

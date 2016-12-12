@@ -1,0 +1,24 @@
+<div class="col-sm-3">
+	<div class="panel panel-primary">
+	    <div class="panel-heading">
+	        <h3 class='form-header'>Upload Photos</h3>
+	        <span>Types Allowed: jpg, png, gif</span>
+	    </div>
+	    <div class="panel-body">
+	        <form method='post' name='photoForm' enctype='multipart/form-data'>
+	            <div class="form-group">
+	                <label>File</label>
+	                <input type="file" name="file" class="form-control" id="file" file-model='$ctrl.file' required>
+	            </div>
+	            <button type="submit" class="btn btn-primary" name='submit' ng-click="$ctrl.uploadFile()">Submit</button>
+	        </form>
+	        <span id='msg'>{{$ctrl.msg}}</span>
+	    </div>
+	</div>
+</div>
+
+<div class="col-sm-7">
+	<!-- <p>{{$ctrl.service}}</p> -->
+	<div class='col-sm-4' ng-repeat='photo in $ctrl.photos' style="margin-bottom:20px"><img class="img-responsive" ng-src={{photo.photourl}}>
+	</div>
+</div>
