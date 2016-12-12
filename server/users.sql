@@ -17,6 +17,3 @@ CREATE TABLE photos (
   userId INTEGER,
   photoUrl VARCHAR
 );
-
-INSERT INTO users (name, email, password)
-  VALUES ('Mike', 'mike@gmail.com', 'pass');
